@@ -24,24 +24,24 @@ class Placeholder extends Component {
   componentDidMount() {
     const { _handleImageFade } = this
 
-    setInterval(_handleImageFade, 50)
+    setInterval(_handleImageFade, 25)
   }
 
   _handleImageFade() {
     const { opacity, climb, images, imageCounter } = this.state
 
-    if (opacity >= 0.7 && climb === true) {
-      this.setState({climb: false, opacity: opacity - 0.01})
+    if (opacity >= 0.85 && climb === true) {
+      this.setState({climb: false, opacity: opacity - 0.005})
     } else if (opacity < 0) {
       this.setState({
         climb: true,
-        opacity: opacity + 0.01,
+        opacity: opacity + 0.005,
         imageCounter: images[imageCounter + 1] === undefined ? 0 : imageCounter + 1
       })
     } else if (climb === true) {
-      this.setState({opacity: opacity + 0.01})
+      this.setState({opacity: opacity + 0.005})
     } else if (climb === false){
-      this.setState({opacity: opacity - 0.01})
+      this.setState({opacity: opacity - 0.005})
     }
   }
 
