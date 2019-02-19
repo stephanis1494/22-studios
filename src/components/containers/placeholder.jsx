@@ -8,7 +8,7 @@ class Placeholder extends Component {
     this.state = {
       images: [
         'https://res.cloudinary.com/df0ll615k/image/upload/v1550511321/kary-background-crop.jpg',
-        'https://res.cloudinary.com/df0ll615k/image/upload/v1550512615/ph-image3.jpg',
+        'https://res.cloudinary.com/df0ll615k/image/upload/v1550545470/ph-image5.jpg',
         'https://res.cloudinary.com/df0ll615k/image/upload/v1550512610/ph-image1.jpg',
         'https://res.cloudinary.com/df0ll615k/image/upload/v1550512609/ph-image2.jpg'
 
